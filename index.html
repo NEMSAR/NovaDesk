@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>NovaDesk</title>
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="NovaDesk">
+    
+    <link rel="icon" href="https://i.imgur.com/UecUeCm.png" type="image/png">
+    <link rel="apple-touch-icon" href="https://i.imgur.com/UecUeCm.png">
+
+    <style>
+        body, html {
+            margin: 0; padding: 0; height: 100vh; overflow: hidden; background-color: #f0f4f8;
+        }
+        /* El truco mágico para ocultar el banner de Google Apps Script */
+        .iframe-container {
+            position: absolute; top: -30px; /* Sube el iframe para esconder el banner */
+            left: 0; right: 0; bottom: 0; width: 100%; height: calc(100vh + 30px);
+        }
+        iframe {
+            width: 100%; height: 100%; border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="iframe-container">
+        <iframe src="https://script.google.com/macros/s/AKfycbyBnioGA8kvZvUj9dy3C95IiVNaO_fSFgpeBUeOaggANqgqw_jyMovr0iXq4CsgVEXz/exec" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
